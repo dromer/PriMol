@@ -16,10 +16,15 @@ Run the script inside pymol and calibrate with the 'Psi' position.
 Which is something like this:  
 ```
   | o |  
+
    \|/  
+
     |  
+
    / \  
+
    | |  
+
 ```
 
 When the calibration is done you can turn the molecule along the z and y axis.
