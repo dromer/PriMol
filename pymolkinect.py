@@ -2,13 +2,13 @@
 ## The equivalent of:
 ##  "Working with the Skeleton"
 ## in the OpenNI user guide.
+## For use in Pymol
 
 """
 This shows how to identify when a new user is detected, look for a pose for
 that user, calibrate the users when they are in the pose, and track them.
 
-Specifically, it prints out the location of the users' head,
-as they are tracked.
+It will then use the hand-positions to rotate a molecule that is loaded beforehand
 """
 
 # Pose to use to calibrate the user
