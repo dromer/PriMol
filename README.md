@@ -14,12 +14,13 @@ Make sure to use the unstable branch of OpenNI.
 Start pymol, load a molecule of your choosing and set the view as you like.
 Run the script inside pymol and calibrate with the 'Psi' position.
 Which is something like this:  
-    | o |  
-     \|/  
-      |  
-     / \  
-     | |  
-
+```
+| o |  
+ \|/  
+  |  
+ / \  
+ | |  
+```
 When the calibration is done you can turn the molecule along the z and y axis.
 
 
