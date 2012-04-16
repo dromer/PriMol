@@ -11,9 +11,11 @@ Make sure to use the unstable branch of OpenNI.
 
 ## Usage
 
+Make sure your kinect is working. Try running freenect-glview to see if the kinect can fully see you.
+
 Start pymol, load a molecule of your choosing and set the view as you like.
-Run the script inside pymol and calibrate with the 'Psi' position.
-Which is something like this:  
+
+Run the script inside pymol ( '''pymol> run pymolkinect.py''' ) and calibrate with the 'Psi' position. Which looks something like this:
 
      | O |
       \|/  
@@ -21,8 +23,10 @@ Which is something like this:
       / \  
       | |  
 
-When the calibration is done you can turn the molecule along the z and y axis.
+When the calibration is done you can turn the molecule along the z and y axis by moving your hands.
 
+Moving your hands apart will zoom the molecule.
 
 ## More Info
+
 http://wiki.techinc.nl/index.php?title=Pymol-Kinect
