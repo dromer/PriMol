@@ -21,9 +21,6 @@ import time
 from pymol import cmd
 
 
-#cmd.load('01-reference.mol2')
-
-
 ctx = Context()
 ctx.init()
 
@@ -72,9 +69,10 @@ skel_cap.set_profile(SKEL_PROFILE_ALL)
 ctx.start_generating_all()
 print "0/4 Starting to detect users. Press Ctrl-C to exit."
 
-# Accumulated angles
+# Initialize accumulated angles
 acchor=0
 accver=0
+acczom=100
 
 while True:
     # Update to next frame
@@ -102,10 +100,20 @@ while True:
 
 	    cmd.turn('y', hor)
 	    cmd.turn('z', ver)
+	    
+
+	    # Zoom selection
+
+	    handist=sqrt(x*x + y*y + z*z)
+#	    print handist
+	    zomh=handist/5-acczom
+#	    print zomh
+	    cmd.move('z', zomh)
+	    acczom+=zomh
 
 	    # Refresh screen and wait for next iteration
 	    cmd.refresh()
-	    time.sleep(0.05)
+	    time.sleep(0.03)
 
 #	    print "x={0}, y={1}, z={2}" .format(x, y, z)
 

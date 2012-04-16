@@ -15,12 +15,12 @@ Start pymol, load a molecule of your choosing and set the view as you like.
 Run the script inside pymol and calibrate with the 'Psi' position.
 Which is something like this:  
 
-    | o |  
-     \|/  
-      |  
-     / \  
-     | |  
-
+       o   
+     \_|_/  
+       |  
+      / \  
+      | |  
+      ^ ^
 
 When the calibration is done you can turn the molecule along the z and y axis.
 
