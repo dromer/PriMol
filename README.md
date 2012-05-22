@@ -15,7 +15,7 @@ Make sure your kinect is working. Try running freenect-glview to see if the kine
 
 Start pymol, load a molecule of your choosing and set the view as you like.
 
-Run the script inside pymol ( '''pymol> run pymolkinect.py''' ) and calibrate with the 'Psi' position. Which looks something like this:
+Run the script inside pymol ( '''pymol> run primol.py''' ) and calibrate with the 'Psi' position. Which looks something like this:
 
      | O |
       \|/  
@@ -29,4 +29,4 @@ Moving your hands apart will zoom the molecule.
 
 ## More Info
 
-http://wiki.techinc.nl/index.php?title=Pymol-Kinect
+http://wiki.techinc.nl/index.php/PriMol
